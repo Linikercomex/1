@@ -27,7 +27,7 @@ def encontrar_ncm(descricao_usuario):
     usuario_vetor = vectorizer.transform([descricao_limpa])
     similaridade = cosine_similarity(usuario_vetor, ncm_matrix)
     
-    indices = similaridade.argsort()[0][::-1][:5]
+    indices = similaridade.argsort()[0][::-1][:4]
     
     resultados = []
     for i in indices:
@@ -46,4 +46,5 @@ if __name__ == "__main__":
     for r in resultados_finais:
 
         print(f"NCM: {r['ncm']} | Similaridade: {r['similaridade']:.2f} | Descrição: {r['descricao']}")
+
 
