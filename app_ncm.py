@@ -4,12 +4,12 @@ from analisador_ncm import encontrar_ncm
 
 # --- Configuração da Página ---
 st.set_page_config(page_title="NCM Master - Liniker.comex", layout="wide")
-st.title("🔎 Analisador de NCM")
-st.subheader("Encontre a classificação fiscal do seu produto com IA.")
+st.title("🔎 Analisador de NCM, fácil e rápido.")
+st.subheader("Encontre a classificação fiscal de um produto.")
 
 # --- Entrada do Usuário ---
 st.markdown("---")
-descricao_produto = st.text_input("Digite a descrição do produto:", help="Ex: 'aparelho de ar condicionado para veículo'")
+descricao_produto = st.text_input("Digite a descrição do 'produto' e clique em Analisar NCM:", help="Ex: 'cavalos'")
 
 # --- Lógica de Exibição ---
 if st.button("Analisar NCM"):
@@ -40,4 +40,5 @@ if st.button("Analisar NCM"):
 
 # --- Rodapé ---
 st.markdown("---")
-st.markdown("Desenvolvido por **Liniker.comex** com base em IA.")
+
+st.markdown("Projeto desenvolvido por **@Liniker.comex** para simulação, para casos reais contactar um despachante aduaneiro.")
