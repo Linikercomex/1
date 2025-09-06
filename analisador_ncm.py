@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import sys
 
 # --- Configuração ---
-caminho_planilha = 'ncm_limpo.csv'
+caminho_planilha = 'ncm.csv'
 nome_coluna_ncm = 'codigo_ncm'
 nome_coluna_descricao = 'descricao_oficial'
 
@@ -46,3 +46,4 @@ if __name__ == "__main__":
     for r in resultados_finais:
 
         print(f"NCM: {r['ncm']} | Similaridade: {r['similaridade']:.2f} | Descrição: {r['descricao']}")
+
